@@ -76,30 +76,38 @@ S51WG
 
 # Algorithms
 
-BreadthFirstSearch.c - Finds the shortest path to the goal node from the start node 
+BreadthFirstSearch.c:
+
+- Finds the shortest path to the goal node from the start node 
 
 - Does not take node costs into consideration 
 
 - Explores the whole map 
 
 
-Dijkstras.c          - Finds the cheapest path to the goal node from the start node 
+Dijkstras.c:  
+
+- Finds the cheapest path to the goal node from the start node 
 
 - Does consider node costs when finding the path 
 
 - Explores the whole map 
 
 
-GreedyBestFirst.c    - Does not always find the shortest path to the goal node from the start node 
+GreedyBestFirst.c:  
+
+- Does not always find the shortest path to the goal node from the start node 
 
 - Does not take node costs into consideration 
 
 - Explores only nodes in the direction of the goal -> faster algorithm 
 
-                     - Uses a heuristic function which calculates manhattan distance 
+- Uses a heuristic function which calculates manhattan distance 
 
 
-AStar.c              - Finds the cheapest path to the goal node from the start node 
+AStar.c:
+
+- Finds the cheapest path to the goal node from the start node 
 
 - Does consider node costs when finding the path 
 
@@ -108,7 +116,9 @@ AStar.c              - Finds the cheapest path to the goal node from the start n
 - Uses a heuristic function which calculates manhatten distance 
 
 
-AStarDiag.c          - Finds the cheapest path to the goal from the start node 
+AStarDiag.c:
+
+- Finds the cheapest path to the goal from the start node 
 
 - Allows diagonal movements when they would not cut corners through walls 
 
