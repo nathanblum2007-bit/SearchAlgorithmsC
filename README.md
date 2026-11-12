@@ -19,7 +19,13 @@ Green - A node visited
 
 # Grid configurating
 
-Note: the top left corner is [0][0]. The bottom right corner is [height-1][width-1].
+Note: the top left corner is [0][0]. The bottom right corner is [height-1][width-1]
+
+The Grid is initialized to a size of 5x5.
+Start is initialized to [0][0] (Except in GreedyBestFirst.c to showcase its unique pathfinding - it is [2][0]). 
+Goal is initialized to [0][4]
+[0][3], [1][3], [2][3], and [3][3] are initialized as walls.
+
 
 Setting the starting location - struct Node *start = &realGrid.layout[y][x];
 Setting the goal location - struct Node *goal = &realGrid.layout[y][x];

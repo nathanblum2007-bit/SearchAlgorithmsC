@@ -61,8 +61,7 @@ int main(void){
     realGrid.layout[3][3].isWall = true;
 
     //Set the unique costs to whatever youd like
-    realGrid.layout[0][1].cost = 5;
-    realGrid.layout[3][2].cost = 2;
+    //realGrid.layout[0][1].cost = 5;
 
     //Set the starting positions
     struct Node *start = &realGrid.layout[0][0];

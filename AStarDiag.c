@@ -63,8 +63,8 @@ int main(void){
     realGrid.layout[3][3].isWall = true;
 
     //Set the unique costs to whatever youd like
-    realGrid.layout[0][1].cost = 5;
-    //realGrid.layout[3][2].cost = 2;
+    //realGrid.layout[0][1].cost = 5;
+
 
     //Set the starting positions
     struct Node *start = &realGrid.layout[0][0];
@@ -104,10 +104,12 @@ int main(void){
             int ny = curr->y + dy[i];
             //if the neighbour wouldnt exceed the boundaries of the grid, and isnt a wall
             if((nx >= 0 && nx <= width-1 && ny >= 0 && ny <= height-1 && realGrid.layout[ny][nx].isWall == false)){
+                //if moving diagonally to the neighbour would not cut corners
                 if(!((i == 1 || i == 3 || i == 5 || i == 7) && (realGrid.layout[ny][curr->x].isWall == true || realGrid.layout[curr->y][nx].isWall == true))){
                     double nCost = -1;
+                    //if the movement is diagonal, cost * root2
                     if(i == 1 || i == 3 || i == 5 || i == 7){
-                        nCost = curr->costSoFar + realGrid.layout[ny][nx].cost*pow(2, 0.5);
+                        nCost = curr->costSoFar + realGrid.layout[ny][nx].cost*sqrt(2);
                     }else{
                         nCost = curr->costSoFar + realGrid.layout[ny][nx].cost;
                     }
