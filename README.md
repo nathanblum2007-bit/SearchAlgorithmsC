@@ -20,14 +20,14 @@ Each node is printed in one of the following colours:
 
 Red - A node not visited 
 
-    - All walls will always be printed red 
+- All walls will always be printed red 
 
 
 Green - A node visited 
 
-      - S will always be green 
+- S will always be green 
 
-      - G will be green in any situation where there is a possible path 
+- G will be green in any situation where there is a possible path 
 
 
 # Grid configurating
@@ -78,47 +78,47 @@ S51WG
 
 BreadthFirstSearch.c - Finds the shortest path to the goal node from the start node 
 
-                     - Does not take node costs into consideration 
+- Does not take node costs into consideration 
 
-                     - Explores the whole map 
+- Explores the whole map 
 
 
 Dijkstras.c          - Finds the cheapest path to the goal node from the start node 
 
-                     - Does consider node costs when finding the path 
+- Does consider node costs when finding the path 
 
-                     - Explores the whole map 
+- Explores the whole map 
 
 
 GreedyBestFirst.c    - Does not always find the shortest path to the goal node from the start node 
 
-                     - Does not take node costs into consideration 
+- Does not take node costs into consideration 
 
-                     - Explores only nodes in the direction of the goal -> faster algorithm 
+- Explores only nodes in the direction of the goal -> faster algorithm 
 
                      - Uses a heuristic function which calculates manhattan distance 
 
 
 AStar.c              - Finds the cheapest path to the goal node from the start node 
 
-                     - Does consider node costs when finding the path 
+- Does consider node costs when finding the path 
 
-                     - Explores only nodes in the direction of the goal -> faster algorithm 
+- Explores only nodes in the direction of the goal -> faster algorithm 
 
-                     - Uses a heuristic function which calculates manhatten distance 
+- Uses a heuristic function which calculates manhatten distance 
 
 
 AStarDiag.c          - Finds the cheapest path to the goal from the start node 
 
-                     - Allows diagonal movements when they would not cut corners through walls 
+- Allows diagonal movements when they would not cut corners through walls 
 
-                     - Does consider node costs when finding the path 
+- Does consider node costs when finding the path 
 
-                     - Diagonal movement cost = node cost * sqrt(2) 
+- Diagonal movement cost = node cost * sqrt(2) 
 
-                     - Explores only nodes in the direction of the goal -> faster algorithm 
+- Explores only nodes in the direction of the goal -> faster algorithm 
 
-                     - Uses a heuristic function which calculates octile distance 
+- Uses a heuristic function which calculates octile distance 
 
 
 
