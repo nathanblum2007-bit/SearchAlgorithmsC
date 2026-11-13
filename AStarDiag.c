@@ -45,7 +45,7 @@ int main(void){
             realGrid.layout[i][j].x = j;
             realGrid.layout[i][j].y = i;
             realGrid.layout[i][j].visited = false;
-            realGrid.layout[i][j].previousNode = NULL;
+            realGrid.layout[i][j].previousNode = nullptr;
             realGrid.layout[i][j].isWall = false;
             realGrid.layout[i][j].inPath = false;
             realGrid.layout[i][j].inFrontier = false;
